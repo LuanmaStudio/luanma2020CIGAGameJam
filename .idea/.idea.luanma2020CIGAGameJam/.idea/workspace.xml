@@ -19,12 +19,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Script/IHealth.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/HealthBase.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/IAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/EnemyData.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/TargetPositionEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/HealthBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/EnemyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/EnemiesData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/IAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Player.cs" />
       </list>
     </option>

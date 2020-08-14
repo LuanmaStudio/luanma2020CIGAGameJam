@@ -4,6 +4,9 @@ using UnityEngine.Serialization;
 
 namespace Script
 {
+    /// <summary>
+    /// 有血量物体的基类
+    /// </summary>
     public class HealthBase : MonoBehaviour
     {
         /// <summary>
@@ -20,7 +23,9 @@ namespace Script
             { helth = value;
             }
         }
-
+        /// <summary>
+        /// 死亡时的事件
+        /// </summary>
         public UnityEvent onDead;
 
         [SerializeField]protected int maxHelth;

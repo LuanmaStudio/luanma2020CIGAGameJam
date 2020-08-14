@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Script
 {
+    /// <summary>
+    /// 存放敌人出场顺序
+    /// </summary>
     [CreateAssetMenu(fileName = "EnemyData", menuName = "敌人", order = 0)]
     public class EnemiesData : ScriptableObject
     {
@@ -14,17 +17,25 @@ namespace Script
         public List<EnemyData> enemies;
     }
 
+    /// <summary>
+    /// 敌人类型
+    /// </summary>
     [Serializable]
     public enum EnemyType
     {
         Melee,Remote
-        
     }
 
+    /// <summary>
+    /// 在那边出来
+    /// </summary>
     public enum Side
     {
         Right,Left
     }
+    /// <summary>
+    /// 敌人的数据
+    /// </summary>
     [Serializable]
     public struct EnemyData
     {

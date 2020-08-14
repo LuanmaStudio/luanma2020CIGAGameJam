@@ -31,6 +31,10 @@ public class EnemyManager : MonoBehaviour
         
     }
 
+    /// <summary>
+    /// 生成敌人
+    /// </summary>
+    /// <param name="data">敌人的数据</param>
     async void SpawnEnermy(EnemyData data)
     {
         Enemy go = null;

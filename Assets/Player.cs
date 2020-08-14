@@ -4,8 +4,10 @@ using System.Collections.Generic;
 using DG.Tweening;
 using Script;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
+/// <summary>
+/// 玩家
+/// </summary>
 public class Player : HealthBase,IAttack
 {
     public int Damage { get=>damage; set=>damage = value; }
@@ -32,16 +34,16 @@ public class Player : HealthBase,IAttack
     // Update is called once per frame
     void Update()
     {
-        if (Keyboard.current[Key.LeftArrow].wasPressedThisFrame)
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             if(side == Side.Right) True();
         }
-        else if (Keyboard.current[Key.RightArrow].wasPressedThisFrame)
+        else if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             if(side == Side.Left) True();
         }
 
-        if (Keyboard.current[Key.X].wasPressedThisFrame)
+        if (Input.GetKeyDown(KeyCode.X))
         {
             if (enemyDir[side.ToString()].Count != 0)
             {
@@ -53,12 +55,15 @@ public class Player : HealthBase,IAttack
             }
 
         }
-        else if (Keyboard.current[Key.Z].wasPressedThisFrame)
+        else if (Input.GetKeyDown(KeyCode.Z))
         {
             
         }
     }
 
+    /// <summary>
+    /// 转向
+    /// </summary>
     void True()
     {
         print("Trued");

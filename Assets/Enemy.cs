@@ -5,6 +5,9 @@ using DG.Tweening;
 using Script;
 using UnityEngine;
 
+/// <summary>
+/// 敌人类
+/// </summary>
 public class Enemy : HealthBase,IAttack
 {
     public int Damage { get; set; } = 1;
@@ -19,6 +22,10 @@ public class Enemy : HealthBase,IAttack
         
     }
 
+    /// <summary>
+    /// 朝玩家移动
+    /// </summary>
+    /// <param name="side">哪边</param>
     public void MoveToPlayer(Side side)
     {
         Vector2 pos;
@@ -32,7 +39,7 @@ public class Enemy : HealthBase,IAttack
 
         }
         var tweener = transform.DOMove(pos, 3);
-        tweener.onComplete +=()=> Attack(Player.Instance);
+        tweener.onComplete +=()=> Attack(Player.Instance);//移动到目标了开始攻击
         tweener.SetEase(Ease.Linear);
     }
 
