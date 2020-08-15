@@ -12,11 +12,11 @@ namespace Script
         /// <summary>
         /// 最大生命值
         /// </summary>
-        public int MaxHelth { get=>maxHelth; set=>maxHelth = value; }
+        public int MaxHelth { get=>maxHelth; set=>maxHelth =value; }
         /// <summary>
         /// 当前生命值
         /// </summary>
-        public int Helth { get=>helth; set { helth = value; } }
+        public int Helth { get=>helth; set { helth = Mathf.Clamp(value, 0, MaxHelth); } }
         
         public float MissRate { get=>missRate; set=>missRate = value; }
         
@@ -45,7 +45,7 @@ namespace Script
             }
             
             Helth -= damage;
-            if(helth<=0) Death();
+            if(Helth<=0) Death();
         }
 
         /// <summary>
@@ -55,6 +55,7 @@ namespace Script
         public virtual void Healing(int recover)
         {
             Helth += recover;
+            
         }
 
         /// <summary>
