@@ -16,6 +16,24 @@ MonoBehaviour:
   Min: 0
   Max: 8
   Default: 0
+  Exists: 0
+--- !u!114 &-8730432821831495456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/fmod_project/gamejam2020/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637331395537310241
+  LoadResult: 0
+  FileSizes: []
   Exists: 1
 --- !u!114 &-8629129442342585955
 MonoBehaviour:
@@ -31,11 +49,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/fmod_project/gamejam2020/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637331310051209474
+  lastModified: 637331395537330231
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 1058
+  Exists: 1
+--- !u!114 &-8075293670825943198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/player.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/fmod_project/gamejam2020/Build/Desktop/player.bank
+  SubDir: 
+  lastModified: 637331395538850565
+  LoadResult: 0
+  FileSizes: []
   Exists: 1
 --- !u!114 &-3312179169373706036
 MonoBehaviour:
@@ -70,7 +106,7 @@ MonoBehaviour:
   Path: event:/player_hit/hit
   guid: 92d3e867e9d20e4f9f7060271408e19f
   Banks:
-  - {fileID: 8395256286162660652}
+  - {fileID: -8075293670825943198}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -92,21 +128,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -8629129442342585955}
-  - {fileID: 6288048036819464484}
-  - {fileID: 2255752232879009191}
-  - {fileID: 8395256286162660652}
+  - {fileID: -8730432821831495456}
+  - {fileID: 5524001781888971140}
+  - {fileID: -8075293670825943198}
   EditorEvents:
   - {fileID: 9087685422771945409}
   - {fileID: -1983308389809762720}
   - {fileID: 2838398222203624761}
   EditorParameters:
-  - {fileID: 961531127680640939}
-  - {fileID: -9058966500267580788}
+  - {fileID: 5951807871944922809}
+  - {fileID: 1993336631660654511}
   MasterBanks:
-  - {fileID: 6288048036819464484}
+  - {fileID: -8730432821831495456}
   StringsBanks:
   - {fileID: -8629129442342585955}
-  stringsBankWriteTime: 637331310051209474
+  stringsBankWriteTime: 637331395537330231
   cacheVersion: 3
 --- !u!114 &961531127680640939
 MonoBehaviour:
@@ -123,6 +159,23 @@ MonoBehaviour:
   Name: weapon_type
   Min: 0
   Max: 4
+  Default: 0
+  Exists: 0
+--- !u!114 &1993336631660654511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: game_state
+  m_EditorClassIdentifier: 
+  Name: game_state
+  Min: 0
+  Max: 8
   Default: 0
   Exists: 1
 --- !u!114 &2159729131273115911
@@ -160,7 +213,7 @@ MonoBehaviour:
   lastModified: 637331310051739505
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &2838398222203624761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,7 +229,7 @@ MonoBehaviour:
   Path: event:/player_hit/player_attack_effect
   guid: f4d65a7caade984380157ba50521d57e
   Banks:
-  - {fileID: 8395256286162660652}
+  - {fileID: -8075293670825943198}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -201,6 +254,41 @@ MonoBehaviour:
   Max: 8
   Default: 0
   Exists: 0
+--- !u!114 &5524001781888971140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/music.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/fmod_project/gamejam2020/Build/Desktop/music.bank
+  SubDir: 
+  lastModified: 637331395537960355
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &5951807871944922809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: weapon_type
+  m_EditorClassIdentifier: 
+  Name: weapon_type
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
 --- !u!114 &6288048036819464484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,7 +306,7 @@ MonoBehaviour:
   lastModified: 637331310051199474
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &7099905069083147944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,7 +359,7 @@ MonoBehaviour:
   lastModified: 637331310051929559
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &9087685422771945409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,7 +375,7 @@ MonoBehaviour:
   Path: event:/music/music
   guid: 6e6b68ff47494347985f91ed0ec480cc
   Banks:
-  - {fileID: 2255752232879009191}
+  - {fileID: 5524001781888971140}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
