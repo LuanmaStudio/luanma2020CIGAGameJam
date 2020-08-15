@@ -61,6 +61,13 @@ public class Player : HealthBase
         }
     }
 
+    public override void TakeDamage(int damage)
+    {
+        base.TakeDamage(damage);
+        PlayerHpSlider.Instance.Slider.value = Helth;
+        PlayerHpSlider.Instance.Slider.maxValue = maxHelth;
+    }
+
     /// <summary>
     /// 转向
     /// </summary>
