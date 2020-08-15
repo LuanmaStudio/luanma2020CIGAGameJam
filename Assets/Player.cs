@@ -29,7 +29,6 @@ public class Player : HealthBase
     void Start()
     {
         helth = maxHelth;
-        weapon = GetComponentInChildren<IAttack>();
         animator = GetComponent<Animator>();
     }
 

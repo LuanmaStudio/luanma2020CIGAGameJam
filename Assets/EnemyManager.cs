@@ -18,16 +18,17 @@ public class EnemyManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        EnemyDictionary.Add("Right",new List<Enemy>());
+        EnemyDictionary.Add("Left",new List<Enemy>());
     }
 
     void Start()
     {
-        EnemyDictionary.Add("Right",new List<Enemy>());
-        EnemyDictionary.Add("Left",new List<Enemy>());
-        foreach (var enemy in Data.enemies)
+
+        /*foreach (var enemy in Data.enemies)
         {
-            StartCoroutine(SpawnEnermy(enemy));
-        }
+            SpawnEnermy(enemy);
+        }*/
         
     }
 
@@ -35,10 +36,9 @@ public class EnemyManager : MonoBehaviour
     /// 生成敌人
     /// </summary>
     /// <param name="data">敌人的数据</param>
-    IEnumerator SpawnEnermy(EnemyData data)
+    public void SpawnEnermy(EnemyData data)
     {
         Enemy go = null;
-        yield return new WaitForSeconds(data.Time);
         if (data.Type == EnemyType.Melee)
         {
             if (data.Side == Side.Right)
