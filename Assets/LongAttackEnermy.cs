@@ -7,7 +7,6 @@ using UnityEngine;
 public class LongAttackEnermy : Enemy,IAttack
 {
     public AnimationCurve Curve;
-    
     private LineRenderer laser;
     [SerializeField] private float attackDuration;
 
@@ -49,8 +48,8 @@ public class LongAttackEnermy : Enemy,IAttack
         twenner.SetEase(Curve);
         twenner.onComplete += ()=>
         {
-            Death();
             Player.Instance.ReciveLaser();
+            Death();
         };
     }
     

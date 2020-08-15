@@ -50,14 +50,23 @@
               <e p="Asset" t="Include">
                 <e p="{2c533654-b738-4d0d-b7a7-88e106bff235}.xml" t="Include" />
                 <e p="{88e515fa-9764-45ab-a32e-8e0220af7073}.xml" t="Include" />
+                <e p="{f7311c7f-559f-4c0b-bcd8-27e0ef221f75}.xml" t="Include" />
               </e>
               <e p="AudioFile" t="Include">
                 <e p="{292396a8-5844-40ee-addc-e91e9e2c1412}.xml" t="Include" />
+                <e p="{853072b2-fbdb-4d89-b059-415a76d26704}.xml" t="Include" />
                 <e p="{9a1c5104-064b-4c23-9a8f-34b8dd4258df}.xml" t="Include" />
+                <e p="{a1b1bf79-f51d-4d44-91ee-c68dbca79704}.xml" t="Include" />
+                <e p="{c5c3bf02-431a-438f-ab9c-f65ddc29569c}.xml" t="Include" />
+                <e p="{ca50ab3a-be63-4ebc-ac06-666a6e88a51b}.xml" t="Include" />
                 <e p="{d04a2752-510e-4953-a90a-079e10059379}.xml" t="Include" />
+                <e p="{e1fc98b4-061e-4034-90b5-e15c259189b4}.xml" t="Include" />
+                <e p="{ea81f235-adbc-4dab-923e-642a3be84a15}.xml" t="Include" />
                 <e p="{fe6e5c8e-2665-4486-b9e1-03f25f6c36c9}.xml" t="Include" />
               </e>
               <e p="Bank" t="Include">
+                <e p="{30bab200-9424-49b3-91fc-7dd48bd21111}.xml" t="Include" />
+                <e p="{38377f4e-59a1-4bfd-8366-2cabc56f10cb}.xml" t="Include" />
                 <e p="{84715f46-430e-4ed1-a981-198c06fd2e16}.xml" t="Include" />
               </e>
               <e p="BankFolder" t="Include">
@@ -67,13 +76,33 @@
                 <e p="{8da1a0ed-e4fa-4bcc-99d6-6e15ed047b11}.xml" t="Include" />
               </e>
               <e p="EncodingSetting" t="Include">
+                <e p="{3ca9b9e4-22ad-492a-b4c8-7cc85936f416}.xml" t="Include" />
+                <e p="{635f8ee9-5fac-4add-89ad-c26fa2dfe189}.xml" t="Include" />
+                <e p="{72010255-5f7c-4e6e-b26f-b8106923fe5c}.xml" t="Include" />
+                <e p="{79858ea5-e314-4e7e-8aba-9eb605a892ed}.xml" t="Include" />
+                <e p="{91ec52c3-efd6-4a18-ac20-03f4c6cde4e3}.xml" t="Include" />
+                <e p="{e4c245f3-1f8d-436d-a57e-9fd86d5fea56}.xml" t="Include" />
+                <e p="{e62302e8-2e91-41cb-ad8d-797286d2eb5c}.xml" t="Include" />
+                <e p="{e7e56788-ce6f-4f63-b731-82328b2ea867}.xml" t="Include" />
+                <e p="{e9115f62-7bf7-49d7-bad2-445a7dbc4383}.xml" t="Include" />
                 <e p="{fd1091be-43fd-40c1-8e60-10000b428330}.xml" t="Include" />
+              </e>
+              <e p="Event" t="Include">
+                <e p="{7c5ad6f4-deaa-4398-8015-7ba50521d57e}.xml" t="Include" />
+                <e p="{ff686b6e-4947-4743-985f-91ed0ec480cc}.xml" t="Include" />
               </e>
               <e p="EventFolder" t="Include">
                 <e p="{21993cc3-aa9c-4e17-900c-d51282478912}.xml" t="Include" />
+                <e p="{5000eb1d-3694-4aa2-ba49-b4e28986c815}.xml" t="Include" />
+                <e p="{93d7f3c3-1831-4d65-a6b9-4616deb2afa6}.xml" t="Include" />
               </e>
               <e p="Master.xml" t="Include" />
               <e p="Mixer.xml" t="Include" />
+              <e p="ParameterPreset" t="Include">
+                <e p="{7a35cbaf-7725-4ea9-8638-81257275e051}.xml" t="Include" />
+                <e p="{ab8011d6-b39a-4019-a813-0ea0fbcd339f}.xml" t="Include" />
+                <e p="{be24d13b-d1bc-4c03-999b-6da02226d038}.xml" t="Include" />
+              </e>
               <e p="ParameterPresetFolder" t="Include">
                 <e p="{373e7b78-e662-4d16-9e3f-661c1ee169c6}.xml" t="Include" />
               </e>
@@ -91,6 +120,9 @@
             </e>
           </e>
         </e>
+        <e p="Item_Pan.cs" t="Include" />
+        <e p="Item_Scissors.cs" t="Include" />
+        <e p="Item_Shit.cs" t="Include" />
         <e p="LongAttackEnermy.cs" t="Include" />
         <e p="Player.cs" t="Include" />
         <e p="PlayerHpSlider.cs" t="Include" />
@@ -167,6 +199,7 @@
           <e p="EnemiesData.cs" t="Include" />
           <e p="HealthBase.cs" t="Include" />
           <e p="IAttack.cs" t="Include" />
+          <e p="Item.cs" t="Include" />
           <e p="IWeapon.cs" t="Include" />
         </e>
         <e p="Sword.cs" t="Include" />

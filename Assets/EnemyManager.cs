@@ -54,15 +54,18 @@ public class EnemyManager : MonoBehaviour
 
         if (data.Type == EnemyType.Remote)
         {
+            LongAttackEnermy longAttackEnermy;
             if (data.Side == Side.Right)
             {
-                go =Instantiate(Enemies[1], RightPos.position,Quaternion.identity).GetComponent<LongAttackEnermy>();
+                longAttackEnermy =Instantiate(Enemies[1], RightPos.position,Quaternion.identity).GetComponent<LongAttackEnermy>();
             }
             else
             {
-                go = Instantiate(Enemies[1], LeftPos.position,Quaternion.identity).GetComponent<LongAttackEnermy>();
+                longAttackEnermy = Instantiate(Enemies[1], LeftPos.position,Quaternion.identity).GetComponent<LongAttackEnermy>();
             }
-            go.Attack();
+            longAttackEnermy.Attack();
+            go = longAttackEnermy;
+
         }
         EnemyDictionary[data.Side.ToString()].Add(go);
         go.onDead.AddListener(()=>EnemyDictionary[data.Side.ToString()].Remove(go));

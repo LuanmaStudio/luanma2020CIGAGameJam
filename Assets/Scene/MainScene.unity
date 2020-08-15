@@ -272,8 +272,9 @@ GameObject:
   - component: {fileID: 412167062}
   - component: {fileID: 412167061}
   - component: {fileID: 412167060}
+  - component: {fileID: 412167063}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Scissors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -294,10 +295,10 @@ RectTransform:
   m_Father: {fileID: 1811140792}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 103.05, y: -120}
-  m_SizeDelta: {x: 206.1, y: 240}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &412167060
 MonoBehaviour:
@@ -379,6 +380,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 412167058}
   m_CullTransparentMesh: 0
+--- !u!114 &412167063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412167058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf5f04e0ae7f0141bd9987f80eeacd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drcipt: "\u526A\u5200\u589E\u52A0\u653B\u51FB\u8303\u56F4"
+  RangeMuti: 0.2
 --- !u!1 &438832427
 GameObject:
   m_ObjectHideFlags: 0
@@ -412,7 +427,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 2.5, y: 0}
   m_SizeDelta: {x: 5, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -755,10 +770,10 @@ RectTransform:
   m_Father: {fileID: 1811140792}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 103.05, y: -360}
-  m_SizeDelta: {x: 206.1, y: 240}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &935571649
 MonoBehaviour:
@@ -996,7 +1011,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "\u9505"
 --- !u!222 &1287616033
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1157,7 +1172,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "\u526A\u5200"
 --- !u!222 &1375945315
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1200,10 +1215,10 @@ RectTransform:
   m_Father: {fileID: 1811140792}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 309.15002, y: -360}
-  m_SizeDelta: {x: 206.1, y: 240}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1422535544
 MonoBehaviour:
@@ -1461,10 +1476,10 @@ RectTransform:
   m_Father: {fileID: 1811140792}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 103.05, y: -600}
-  m_SizeDelta: {x: 206.1, y: 240}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1731759443
 MonoBehaviour:
@@ -1519,8 +1534,9 @@ GameObject:
   - component: {fileID: 1768628862}
   - component: {fileID: 1768628861}
   - component: {fileID: 1768628860}
+  - component: {fileID: 1768628863}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Pan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1541,10 +1557,10 @@ RectTransform:
   m_Father: {fileID: 1811140792}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 309.15002, y: -120}
-  m_SizeDelta: {x: 206.1, y: 240}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1768628860
 MonoBehaviour:
@@ -1626,6 +1642,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1768628858}
   m_CullTransparentMesh: 0
+--- !u!114 &1768628863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768628858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 668bc513100bfa549ab355ced68cb704, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drcipt: "\u6709\u6982\u7387\u95EA\u907F\u8FDC\u7A0B\u653B\u51FB"
+  MissRate: 0.3
 --- !u!1 &1785202567
 GameObject:
   m_ObjectHideFlags: 0
@@ -1658,8 +1688,8 @@ RectTransform:
   m_Father: {fileID: 1236748292}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -2.7000122, y: 0}
   m_SizeDelta: {x: 6.0300293, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1844,6 +1874,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1933326575}
   - component: {fileID: 1933326576}
+  - component: {fileID: 1933326577}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -1923,6 +1954,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1933326577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1933326574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1b1437ea08ee814db33cac3af73a62e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Slider: {fileID: 0}
 --- !u!1 &1938400529
 GameObject:
   m_ObjectHideFlags: 0
@@ -2403,7 +2447,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2122838672
 MonoBehaviour:
   m_ObjectHideFlags: 0

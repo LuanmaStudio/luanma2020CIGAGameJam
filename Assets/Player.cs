@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using Script;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 /// <summary>
 /// 玩家
@@ -13,10 +14,12 @@ public class Player : HealthBase
     public static Player Instance { get; set; }
     
     public Side side = Side.Right;
-    private IAttack weapon;
+    public IAttack weapon;
     protected Dictionary<string, List<Enemy>> EnemyDir;
     private bool isShelid = false;
     public Animator animator;
+
+    public Dictionary<string, object> Items = new Dictionary<string, object>();
 
     private void Awake()
     {
@@ -45,6 +48,11 @@ public class Player : HealthBase
 
         if (Input.GetKeyDown(KeyCode.X))
         {
+            if (Items.ContainsKey("Scissors"))
+            {
+                weapon.Range *= (float)Items["Scissors"];
+                
+            }
             weapon.Attack();
         }
         else if (Input.GetKey(KeyCode.Z))
@@ -57,6 +65,13 @@ public class Player : HealthBase
     {
         if (!isShelid)
         {
+            if (Items.ContainsKey("Pan"))
+            {
+                if(Random.Range(0,1f)<(float)Items["Pan"])
+                {
+                    return;
+                }
+            }
             TakeDamage(1);
         }
     }
