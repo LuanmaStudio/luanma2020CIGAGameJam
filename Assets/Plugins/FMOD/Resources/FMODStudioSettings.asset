@@ -22,7 +22,7 @@ MonoBehaviour:
   BankLoadType: 0
   AutomaticSampleLoading: 0
   EncryptionKey: 
-  ImportType: 0
+  ImportType: 1
   TargetAssetPath: FMODBanks
   LoggingLevel: 2
   SpeakerModeSettings:
@@ -58,7 +58,9 @@ MonoBehaviour:
     Value: 0
   - Platform: 20
     Value: 0
-  BankDirectorySettings: []
+  BankDirectorySettings:
+  - Platform: 2
+    Value: Desktop
   VirtualChannelSettings:
   - Platform: 1
     Value: 1024
@@ -74,7 +76,10 @@ MonoBehaviour:
   - Platform: 20
     Value: 32
   Plugins: []
-  MasterBanks: []
-  Banks: []
+  MasterBanks:
+  - Master
+  Banks:
+  - music
+  - player
   BanksToLoad: []
   LiveUpdatePort: 9264
