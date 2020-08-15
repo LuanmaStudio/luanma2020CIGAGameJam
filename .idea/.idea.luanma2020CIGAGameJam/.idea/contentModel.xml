@@ -126,7 +126,9 @@
         <e p="Item_Pan.cs" t="Include" />
         <e p="Item_Scissors.cs" t="Include" />
         <e p="Item_Shit.cs" t="Include" />
+        <e p="Item_TNT.cs" t="Include" />
         <e p="LongAttackEnermy.cs" t="Include" />
+        <e p="Phone.cs" t="Include" />
         <e p="Player.cs" t="Include" />
         <e p="PlayerHpSlider.cs" t="Include" />
         <e p="Plugins" t="Include">

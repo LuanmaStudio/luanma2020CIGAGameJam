@@ -15,18 +15,18 @@ public class Item_TNT : Item
         base.UseItem();
         Player.Instance.onDead.AddListener(() =>
         {
-            foreach (var item in EnemyManager.Instance.EnemyDictionary)
+            Player.Instance.Healing(2);
+            Player.Instance.onDead.RemoveAllListeners();//TODO:可能会有BUg
+            /*foreach (var item in EnemyManager.Instance.EnemyDictionary)
             {
                 foreach (var enemy in item.Value)
                 {
                     enemy.TakeDamage(10);
+                    print(enemy.gameObject.name);
                 }
-            }
+            }*/
 
-            Player.Instance.Healing(2);
         });
-
-
-        
     }
+    
 }

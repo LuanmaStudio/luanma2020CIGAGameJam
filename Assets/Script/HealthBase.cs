@@ -60,7 +60,7 @@ namespace Script
                 return;
             }
             Helth -= damage;
-            if(Helth<=0) Death();
+            if(helth<=0) Death();
         }
 
         /// <summary>

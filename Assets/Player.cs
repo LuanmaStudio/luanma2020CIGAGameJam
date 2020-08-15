@@ -93,6 +93,11 @@ public class Player : HealthBase
         base.TakeDamage(damage);
     }
 
+    protected override void Death()
+    {
+        base.Death();
+    }
+
     /// <summary>
     /// 转向
     /// </summary>
