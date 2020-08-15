@@ -16,6 +16,7 @@ public class Sword : MonoBehaviour,IAttack
     {
         EnemyDir = EnemyManager.Instance.EnemyDictionary;
         player = Player.Instance;
+        player.weapon = this;
 
     }
 
