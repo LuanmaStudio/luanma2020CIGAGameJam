@@ -1,6 +1,8 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
+using Random = UnityEngine.Random;
 
 namespace Script
 {
@@ -18,8 +20,7 @@ namespace Script
             set
             {
                 maxHelth = value;
-                if(PlayerHpSlider.Instance!=null)
-                    PlayerHpSlider.Instance.Slider.maxValue = maxHelth;
+                PlayerHpSlider.Instance.Slider.maxValue = maxHelth;
             }
         }
 
@@ -28,8 +29,9 @@ namespace Script
         /// </summary>
         public int Helth { get=>helth;
             set
-            { helth = Mathf.Clamp(value, 0, MaxHelth);
-                PlayerHpSlider.Instance.Slider.value = helth;
+            {
+                helth = value;
+                helth = Mathf.Clamp(helth, 0, maxHelth);
             } }
         
         public float MissRate { get=>missRate; set=>missRate = value; }
@@ -57,7 +59,6 @@ namespace Script
                 print("Missed");
                 return;
             }
-            
             Helth -= damage;
             if(Helth<=0) Death();
         }
@@ -69,7 +70,6 @@ namespace Script
         public virtual void Healing(int recover)
         {
             Helth += recover;
-            
         }
 
         /// <summary>
@@ -78,6 +78,11 @@ namespace Script
         protected virtual void Death()
         {
             onDead.Invoke();
+        }
+
+        protected virtual void Update()
+        {
+            PlayerHpSlider.Instance.Slider.value = helth;
         }
     }
 }

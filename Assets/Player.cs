@@ -34,9 +34,9 @@ public class Player : HealthBase
     }
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
-
+        base.Update();
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             if(side == Side.Right) True();
@@ -91,8 +91,6 @@ public class Player : HealthBase
     public override void TakeDamage(int damage)
     {
         base.TakeDamage(damage);
-        PlayerHpSlider.Instance.Slider.value = Helth;
-        PlayerHpSlider.Instance.Slider.maxValue = maxHelth;
     }
 
     /// <summary>
