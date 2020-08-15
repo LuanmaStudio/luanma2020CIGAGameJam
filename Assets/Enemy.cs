@@ -15,6 +15,7 @@ public class Enemy : HealthBase,IAttack
     public float AttackDuration { get; set; }
 
     public float ArriveTime = 1f;
+    public float waitAttackTime = 0.3f;
 
     void Start()
     {
@@ -56,7 +57,7 @@ public class Enemy : HealthBase,IAttack
 
     IEnumerator AttackForawd()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(waitAttackTime);
         Player.Instance.TakeDamage(Damage);
     }
 
