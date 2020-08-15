@@ -12,11 +12,25 @@ namespace Script
         /// <summary>
         /// 最大生命值
         /// </summary>
-        public int MaxHelth { get=>maxHelth; set=>maxHelth =value; }
+        public int MaxHelth
+        {
+            get=>maxHelth;
+            set
+            {
+                maxHelth = value;
+                if(PlayerHpSlider.Instance!=null)
+                    PlayerHpSlider.Instance.Slider.maxValue = maxHelth;
+            }
+        }
+
         /// <summary>
         /// 当前生命值
         /// </summary>
-        public int Helth { get=>helth; set { helth = Mathf.Clamp(value, 0, MaxHelth); } }
+        public int Helth { get=>helth;
+            set
+            { helth = Mathf.Clamp(value, 0, MaxHelth);
+                PlayerHpSlider.Instance.Slider.value = helth;
+            } }
         
         public float MissRate { get=>missRate; set=>missRate = value; }
         

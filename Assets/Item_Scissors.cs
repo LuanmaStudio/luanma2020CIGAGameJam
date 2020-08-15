@@ -20,6 +20,6 @@ public class Item_Scissors : Item
     public override void UseItem()
     {
         base.UseItem();
-        Player.Instance.Items.Add("Scissors",RangeMuti);
+        Player.Instance.Items.Add(this.GetType().ToString(),RangeMuti);
     }
 }

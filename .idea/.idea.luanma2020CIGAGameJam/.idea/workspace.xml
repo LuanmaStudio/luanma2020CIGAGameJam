@@ -8,9 +8,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Item_MutiStick.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Item_LongStick.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/EnemiesData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Item_Pan.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LongAttackEnermy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Item_Amulet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sword.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/IWeapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player.cs" root0="FORCE_HIGHLIGHTING" />
@@ -20,6 +23,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/PlayerHpSlider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HealthBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/WP_LongStick.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/EnemyManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Item_Shit.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -39,11 +43,15 @@
         <option value="$PROJECT_DIR$/Assets/Script/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/LongAttackEnermy.cs" />
         <option value="$PROJECT_DIR$/Assets/EnemyManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Item_Scissors.cs" />
         <option value="$PROJECT_DIR$/Assets/Item_Pan.cs" />
-        <option value="$PROJECT_DIR$/Assets/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Item_Shit.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/HealthBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/WP_LongStick.cs" />
+        <option value="$PROJECT_DIR$/Assets/Item_MutiStick.cs" />
+        <option value="$PROJECT_DIR$/Assets/Item_LongStick.cs" />
+        <option value="$PROJECT_DIR$/Assets/Item_Amulet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Item_Scissors.cs" />
+        <option value="$PROJECT_DIR$/Assets/Player.cs" />
       </list>
     </option>
   </component>
@@ -77,9 +85,9 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="916" y="281" key="RiderGenerateDialog" timestamp="1597461338705">
+    <state x="916" y="281" key="RiderGenerateDialog" timestamp="1597490262292">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state x="916" y="281" key="RiderGenerateDialog/0.0.2194.1194@0.0.2194.1194" timestamp="1597461338705" />
+    <state x="916" y="281" key="RiderGenerateDialog/0.0.2194.1194@0.0.2194.1194" timestamp="1597490262292" />
   </component>
 </project>

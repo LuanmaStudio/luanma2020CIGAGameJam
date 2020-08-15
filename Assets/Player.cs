@@ -36,7 +36,7 @@ public class Player : HealthBase
     // Update is called once per frame
     void Update()
     {
-        isShelid = false;
+
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             if(side == Side.Right) True();
@@ -48,16 +48,28 @@ public class Player : HealthBase
 
         if (Input.GetKeyDown(KeyCode.X))
         {
-            if (Items.ContainsKey("Scissors"))
+            if (Items.ContainsKey(typeof(Item_Scissors).ToString()))
             {
-                weapon.Range *= (float)Items["Scissors"];
-                
+                weapon.Range *= (float)Items[typeof(Item_Scissors).ToString()];
+            }
+
+            if (Items.ContainsKey(typeof(Item_MutiStick).ToString()))
+            {
+                isShelid = true;
             }
             weapon.Attack();
         }
-        else if (Input.GetKey(KeyCode.Z))
+        else if (Input.GetKeyDown(KeyCode.Z))
         {
             isShelid = true;
+        }
+        else if (Input.GetKeyUp(KeyCode.X))
+        {
+            isShelid = false;
+        }
+        else if (Input.GetKeyUp(KeyCode.Z))
+        {
+            isShelid = false;
         }
     }
 
@@ -65,9 +77,9 @@ public class Player : HealthBase
     {
         if (!isShelid)
         {
-            if (Items.ContainsKey("Pan"))
+            if (Items.ContainsKey(typeof(Item_Pan).ToString()))
             {
-                if(Random.Range(0,1f)<(float)Items["Pan"])
+                if(Random.Range(0,1f)<(float)Items[typeof(Item_Pan).ToString()])
                 {
                     return;
                 }

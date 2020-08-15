@@ -120,6 +120,9 @@
             </e>
           </e>
         </e>
+        <e p="Item_Amulet.cs" t="Include" />
+        <e p="Item_LongStick.cs" t="Include" />
+        <e p="Item_MutiStick.cs" t="Include" />
         <e p="Item_Pan.cs" t="Include" />
         <e p="Item_Scissors.cs" t="Include" />
         <e p="Item_Shit.cs" t="Include" />
@@ -203,6 +206,7 @@
           <e p="IWeapon.cs" t="Include" />
         </e>
         <e p="Sword.cs" t="Include" />
+        <e p="WP_LongStick.cs" t="Include" />
       </e>
       <e p="luanma2020CIGAGameJam.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
