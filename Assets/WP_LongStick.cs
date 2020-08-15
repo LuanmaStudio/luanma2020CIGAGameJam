@@ -11,6 +11,8 @@ public class WP_LongStick : MonoBehaviour,IWeapon
     [SerializeField] private int damage;
     [SerializeField] private float range;
     [SerializeField] private float attackDuration;
+    
+    [FMODUnity.EventRef]public string DamageEnvet;
     private static readonly int Attack1 = Animator.StringToHash("Attack");
 
     void Start()
@@ -26,14 +28,17 @@ public class WP_LongStick : MonoBehaviour,IWeapon
     // Update is called once per frame
     void Update()
     {
-        
     }
 
     public int Damage { get=>damage; set=> damage =damage; }
     public float Range { get=>range; set=> range =value; }
     public float AttackDuration { get=>attackDuration; set=>attackDuration =value; }
+    
     public void Attack()
     {
+        var DamageInst = FMODUnity.RuntimeManager.CreateInstance(DamageEnvet);
+        DamageInst.start();
+        
         if (canAttack)
         {
             player.animator.SetTrigger(Attack1);

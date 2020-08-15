@@ -15,6 +15,7 @@ public class Player : HealthBase
     
     public Side side = Side.Right;
     public IAttack weapon;
+    public GameObject FX;
     protected Dictionary<string, List<Enemy>> EnemyDir;
     private bool isShelid = false;
     public Animator animator;
@@ -61,6 +62,7 @@ public class Player : HealthBase
         else if (Input.GetKeyDown(KeyCode.Z))
         {
             isShelid = true;
+            animator.SetTrigger("Defence");
         }
         else if (Input.GetKeyUp(KeyCode.X))
         {
@@ -80,11 +82,20 @@ public class Player : HealthBase
             {
                 if(Random.Range(0,1f)<(float)Items[typeof(Item_Pan).ToString()])
                 {
+                    ShowSheiidPartical();
                     return;
                 }
             }
             TakeDamage(1);
+            return;
         }
+
+        ShowSheiidPartical();
+    }
+
+    void ShowSheiidPartical()
+    {
+        Destroy(Instantiate(FX,transform.position,Quaternion.identity),4);
     }
 
     public override void TakeDamage(int damage)

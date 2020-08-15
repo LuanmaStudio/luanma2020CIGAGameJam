@@ -51,6 +51,12 @@ public class Enemy : HealthBase,IAttack
 
     public virtual void Attack()
     {
+        StartCoroutine(AttackForawd());
+    }
+
+    IEnumerator AttackForawd()
+    {
+        yield return new WaitForSeconds(0.5f);
         Player.Instance.TakeDamage(Damage);
     }
 

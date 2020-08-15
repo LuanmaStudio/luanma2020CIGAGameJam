@@ -68,5 +68,6 @@ public class Sword : MonoBehaviour,IAttack
         canAttack = false;
         yield return new WaitForSeconds(time);
         canAttack = true;
+        player.animator.ResetTrigger("Attack");
     }
 }

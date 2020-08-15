@@ -839,7 +839,7 @@ MonoBehaviour:
   CollisionTag: 
   Event: event:/music/music
   PlayEvent: 1
-  StopEvent: 0
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -2471,6 +2471,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: WP_LongStick
       objectReference: {fileID: 0}
+    - target: {fileID: 5907160769302729003, guid: f80c3a582d6075d4facb1017c2edc4fd,
+        type: 3}
+      propertyPath: DamageEnvet
+      value: event:/player_hit/player_attack_effect
+      objectReference: {fileID: 0}
+    - target: {fileID: 5907160769302729003, guid: f80c3a582d6075d4facb1017c2edc4fd,
+        type: 3}
+      propertyPath: attackDuration
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f80c3a582d6075d4facb1017c2edc4fd, type: 3}
 --- !u!1001 &6598522509704040548
@@ -2545,6 +2555,12 @@ PrefabInstance:
       propertyPath: helth
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6598522511156975931, guid: 58516e1121448f84e9e2b28749d276f7,
+        type: 3}
+      propertyPath: FX
+      value: 
+      objectReference: {fileID: 7437370446411007251, guid: 9c452a9eccada324c90c3b042d2e7081,
+        type: 3}
     - target: {fileID: 6598522511156975934, guid: 58516e1121448f84e9e2b28749d276f7,
         type: 3}
       propertyPath: m_Name

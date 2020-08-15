@@ -101,7 +101,6 @@
               <e p="Master.xml" t="Include" />
               <e p="Mixer.xml" t="Include" />
               <e p="ParameterPreset" t="Include">
-                <e p="{7a35cbaf-7725-4ea9-8638-81257275e051}.xml" t="Include" />
                 <e p="{ab8011d6-b39a-4019-a813-0ea0fbcd339f}.xml" t="Include" />
                 <e p="{be24d13b-d1bc-4c03-999b-6da02226d038}.xml" t="Include" />
               </e>

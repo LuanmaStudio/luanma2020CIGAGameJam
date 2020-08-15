@@ -38,8 +38,6 @@
         <option value="$PROJECT_DIR$/Assets/Editor/TargetPositionEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/IAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/IWeapon.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Sword.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayerHpSlider.cs" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Assets/Script/Item.cs" />
@@ -52,12 +50,14 @@
         <option value="$PROJECT_DIR$/Assets/Script/HealthBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Item_TNT.cs" />
         <option value="$PROJECT_DIR$/Assets/Phone.cs" />
-        <option value="$PROJECT_DIR$/Assets/WP_LongStick.cs" />
-        <option value="$PROJECT_DIR$/Assets/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Item_LongStick.cs" />
-        <option value="$PROJECT_DIR$/Assets/EnemyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/EnemiesData.cs" />
+        <option value="$PROJECT_DIR$/Assets/EnemyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/WP_LongStick.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sword.cs" />
+        <option value="$PROJECT_DIR$/Assets/Player.cs" />
       </list>
     </option>
   </component>

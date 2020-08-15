@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Script;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class LevelManager : MonoBehaviour
 {
@@ -24,8 +25,32 @@ public class LevelManager : MonoBehaviour
     {
         while (true)
         {
-            EnemyManager.Instance.SpawnEnermy(new EnemyData(EnemyType.Melee,Side.Right,1));
-            yield return new WaitForSeconds(0.1744186f);
+            if (Random.Range(1, 10) >5)
+            {
+                Side side;
+                if (Random.Range(1, 10) > 5)
+                {
+                    side = Side.Left;
+                }
+                else
+                {
+                    side = Side.Right;
+                }
+
+                EnemyType type;
+                if (Random.Range(1, 10) > 8)
+                {
+                    type = EnemyType.Remote;
+                }
+                else
+                {
+                    type = EnemyType.Melee;
+                }
+
+                EnemyManager.Instance.SpawnEnermy(new EnemyData(type,side,1));
+                
+            }
+            yield return new WaitForSeconds(0.1744186f*2);
         }
     }
 
