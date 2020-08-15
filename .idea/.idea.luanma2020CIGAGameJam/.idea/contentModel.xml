@@ -48,7 +48,14 @@
           <e p="gamejam2020" t="Include">
             <e p="Metadata" t="Include">
               <e p="Asset" t="Include">
+                <e p="{2c533654-b738-4d0d-b7a7-88e106bff235}.xml" t="Include" />
                 <e p="{88e515fa-9764-45ab-a32e-8e0220af7073}.xml" t="Include" />
+              </e>
+              <e p="AudioFile" t="Include">
+                <e p="{292396a8-5844-40ee-addc-e91e9e2c1412}.xml" t="Include" />
+                <e p="{9a1c5104-064b-4c23-9a8f-34b8dd4258df}.xml" t="Include" />
+                <e p="{d04a2752-510e-4953-a90a-079e10059379}.xml" t="Include" />
+                <e p="{fe6e5c8e-2665-4486-b9e1-03f25f6c36c9}.xml" t="Include" />
               </e>
               <e p="Bank" t="Include">
                 <e p="{84715f46-430e-4ed1-a981-198c06fd2e16}.xml" t="Include" />
