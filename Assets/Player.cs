@@ -14,11 +14,13 @@ public class Player : HealthBase,IAttack
     public static Player Instance { get; set; }
 
     public float minDistance = 1;
+    public float AttackSpeed = 0.5f;
     
 
     [SerializeField]private int damage;
     private Side side = Side.Right;
-    protected Dictionary<string, List<Enemy>> enemyDir;
+    private bool canAttack = true;
+    protected Dictionary<string, List<Enemy>> EnemyDir;
 
     private void Awake()
     {
@@ -28,7 +30,7 @@ public class Player : HealthBase,IAttack
     void Start()
     {
         helth = maxHelth;
-        enemyDir = EnemyManager.Instance.EnemyDictionary;
+        EnemyDir = EnemyManager.Instance.EnemyDictionary;
     }
 
     // Update is called once per frame
@@ -45,9 +47,9 @@ public class Player : HealthBase,IAttack
 
         if (Input.GetKeyDown(KeyCode.X))
         {
-            if (enemyDir[side.ToString()].Count != 0)
+            if (EnemyDir[side.ToString()].Count != 0)
             {
-                var enemy = enemyDir[side.ToString()][0];
+                var enemy = EnemyDir[side.ToString()][0];
                 if (Vector2.Distance(enemy.transform.position, transform.position) < minDistance)
                 {
                     Attack(enemy);
@@ -66,7 +68,6 @@ public class Player : HealthBase,IAttack
     /// </summary>
     void True()
     {
-        print("Trued");
         if (side == Side.Right)
         {
             side = Side.Left;
@@ -81,6 +82,18 @@ public class Player : HealthBase,IAttack
 
     public void Attack(HealthBase target)
     {
-        target.TakeDamage(Damage);
+        if (canAttack)
+        {
+            target.TakeDamage(Damage);
+            print("Attack");
+            StartCoroutine(AttackCool(AttackSpeed));
+        }
+    }
+
+    IEnumerator AttackCool(float time)
+    {
+        canAttack = false;
+        yield return new WaitForSeconds(time);
+        canAttack = true;
     }
 }

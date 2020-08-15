@@ -26,7 +26,7 @@ namespace Script
         /// <summary>
         /// 死亡时的事件
         /// </summary>
-        public UnityEvent onDead;
+        [HideInInspector]public UnityEvent onDead;
 
         [SerializeField]protected int maxHelth;
         [SerializeField]protected int helth;
