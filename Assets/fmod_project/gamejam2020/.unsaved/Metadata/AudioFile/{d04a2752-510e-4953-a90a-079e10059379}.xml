@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{d04a2752-510e-4953-a90a-079e10059379}">
+		<property name="assetPath">
+			<value>weapon/kung_fu_punch-Mike_Koenig-2097967259.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.32301587301587303</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{88e515fa-9764-45ab-a32e-8e0220af7073}</destination>
+		</relationship>
+	</object>
+</objects>
