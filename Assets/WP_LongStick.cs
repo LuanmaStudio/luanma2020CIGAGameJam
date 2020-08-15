@@ -45,7 +45,7 @@ public class WP_LongStick : MonoBehaviour,IWeapon
             if (EnemyDir[Side.Left.ToString()].Count != 0)
             {
                 var enemy = EnemyDir[Side.Left.ToString()][0];
-                if (Vector2.Distance(enemy.transform.position, transform.position) < Range)
+                if (Mathf.Abs(enemy.transform.position.x -transform.position.x) < Range)
                 {
                     enemy.TakeDamage(Damage);
                 }
@@ -53,7 +53,7 @@ public class WP_LongStick : MonoBehaviour,IWeapon
             if (EnemyDir[Side.Right.ToString()].Count != 0)
             {
                 var enemy = EnemyDir[Side.Right.ToString()][0];
-                if (Vector2.Distance(enemy.transform.position, transform.position) < Range)
+                if (Mathf.Abs(enemy.transform.position.x -transform.position.x) < Range)
                 {
                     enemy.TakeDamage(Damage);
                 }
