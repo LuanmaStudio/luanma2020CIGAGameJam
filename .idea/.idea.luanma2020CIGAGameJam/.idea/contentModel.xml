@@ -84,7 +84,9 @@
             </e>
           </e>
         </e>
+        <e p="LongAttackEnermy.cs" t="Include" />
         <e p="Player.cs" t="Include" />
+        <e p="PlayerHpSlider.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="FMOD" t="Include">
             <e p="addons" t="Include">

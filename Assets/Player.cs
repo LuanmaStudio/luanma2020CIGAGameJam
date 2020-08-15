@@ -15,6 +15,8 @@ public class Player : HealthBase
     public Side side = Side.Right;
     private IAttack weapon;
     protected Dictionary<string, List<Enemy>> EnemyDir;
+    private bool isShelid = false;
+    public Animator animator;
 
     private void Awake()
     {
@@ -25,11 +27,13 @@ public class Player : HealthBase
     {
         helth = maxHelth;
         weapon = GetComponentInChildren<IAttack>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        isShelid = false;
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             if(side == Side.Right) True();
@@ -43,9 +47,17 @@ public class Player : HealthBase
         {
             weapon.Attack();
         }
-        else if (Input.GetKeyDown(KeyCode.Z))
+        else if (Input.GetKey(KeyCode.Z))
         {
-            
+            isShelid = true;
+        }
+    }
+
+    public void ReciveLaser()
+    {
+        if (!isShelid)
+        {
+            TakeDamage(1);
         }
     }
 

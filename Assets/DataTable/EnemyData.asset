@@ -15,7 +15,7 @@ MonoBehaviour:
   Describe: "\u6D4B\u8BD5\u8C31\u5B50"
   enemies:
   - Time: 1
-    Type: 0
+    Type: 1
     Side: 0
   - Time: 2
     Type: 0

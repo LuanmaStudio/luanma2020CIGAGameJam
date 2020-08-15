@@ -26,7 +26,7 @@ public class EnemyManager : MonoBehaviour
         EnemyDictionary.Add("Left",new List<Enemy>());
         foreach (var enemy in Data.enemies)
         {
-            SpawnEnermy(enemy);
+            StartCoroutine(SpawnEnermy(enemy));
         }
         
     }
@@ -35,10 +35,10 @@ public class EnemyManager : MonoBehaviour
     /// 生成敌人
     /// </summary>
     /// <param name="data">敌人的数据</param>
-    async void SpawnEnermy(EnemyData data)
+    IEnumerator SpawnEnermy(EnemyData data)
     {
         Enemy go = null;
-        await Task.Delay((int)data.Time*1000);
+        yield return new WaitForSeconds(data.Time);
         if (data.Type == EnemyType.Melee)
         {
             if (data.Side == Side.Right)
@@ -49,9 +49,22 @@ public class EnemyManager : MonoBehaviour
             {
                 go = Instantiate(Enemies[0], LeftPos.position,Quaternion.identity).GetComponent<Enemy>();
             }
+            go.MoveToPlayer(data.Side);
+        }
+
+        if (data.Type == EnemyType.Remote)
+        {
+            if (data.Side == Side.Right)
+            {
+                go =Instantiate(Enemies[1], RightPos.position,Quaternion.identity).GetComponent<LongAttackEnermy>();
+            }
+            else
+            {
+                go = Instantiate(Enemies[1], LeftPos.position,Quaternion.identity).GetComponent<LongAttackEnermy>();
+            }
+            go.Attack();
         }
         EnemyDictionary[data.Side.ToString()].Add(go);
-        go.MoveToPlayer(data.Side);
         go.onDead.AddListener(()=>EnemyDictionary[data.Side.ToString()].Remove(go));
     }
 

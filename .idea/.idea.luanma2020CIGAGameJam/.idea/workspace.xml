@@ -8,10 +8,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/PlayerHpSlider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HealthBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/EnemiesData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/EnemyManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LongAttackEnermy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sword.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/IWeapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player.cs" root0="FORCE_HIGHLIGHTING" />
@@ -23,12 +25,13 @@
         <option value="$PROJECT_DIR$/Assets/Script/IHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/EnemyData.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/TargetPositionEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/EnemyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/EnemiesData.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/HealthBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/IAttack.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/IWeapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/EnemyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/LongAttackEnermy.cs" />
         <option value="$PROJECT_DIR$/Assets/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Sword.cs" />
       </list>
@@ -64,9 +67,9 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="916" y="281" key="RiderGenerateDialog" timestamp="1597457801695">
+    <state x="916" y="281" key="RiderGenerateDialog" timestamp="1597461338705">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state x="916" y="281" key="RiderGenerateDialog/0.0.2194.1194@0.0.2194.1194" timestamp="1597457801695" />
+    <state x="916" y="281" key="RiderGenerateDialog/0.0.2194.1194@0.0.2194.1194" timestamp="1597461338705" />
   </component>
 </project>

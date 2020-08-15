@@ -45,23 +45,18 @@ public class Sword : MonoBehaviour,IAttack
         set => attackDuration = value;
     }
 
-
-    public void Attack(HealthBase target)
-    {
-        target.TakeDamage(Damage);
-    }
-
+    
     public void Attack()
     {
         if (canAttack)
         {
-            
+            player.animator.SetTrigger("Attack");
             if (EnemyDir[player.side.ToString()].Count != 0)
             {
                 var enemy = EnemyDir[player.side.ToString()][0];
                 if (Vector2.Distance(enemy.transform.position, transform.position) < Range)
                 {
-                    Attack(enemy);
+                    enemy.TakeDamage(Damage);
                 }
             }
             StartCoroutine(AttackCool(AttackDuration));

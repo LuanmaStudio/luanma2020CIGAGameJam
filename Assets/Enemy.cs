@@ -14,6 +14,8 @@ public class Enemy : HealthBase,IAttack
     public float Range { get; set; }
     public float AttackDuration { get; set; }
 
+    public float ArriveTime = 1f;
+
     void Start()
     {
 
@@ -41,13 +43,13 @@ public class Enemy : HealthBase,IAttack
             pos = Player.Instance.transform.position - new Vector3(1, 0);
 
         }
-        var tweener = transform.DOMove(pos, 3);
+        var tweener = transform.DOMove(pos, ArriveTime);
         tweener.onComplete +=()=> Attack();//移动到目标了开始攻击
         tweener.SetEase(Ease.Linear);
     }
 
 
-    public void Attack()
+    public virtual void Attack()
     {
         Player.Instance.TakeDamage(Damage);
     }
