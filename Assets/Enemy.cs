@@ -11,6 +11,9 @@ using UnityEngine;
 public class Enemy : HealthBase,IAttack
 {
     public int Damage { get; set; } = 1;
+    public float Range { get; set; }
+    public float AttackDuration { get; set; }
+
     void Start()
     {
 
@@ -39,14 +42,14 @@ public class Enemy : HealthBase,IAttack
 
         }
         var tweener = transform.DOMove(pos, 3);
-        tweener.onComplete +=()=> Attack(Player.Instance);//移动到目标了开始攻击
+        tweener.onComplete +=()=> Attack();//移动到目标了开始攻击
         tweener.SetEase(Ease.Linear);
     }
 
 
-    public void Attack(HealthBase target)
+    public void Attack()
     {
-        target.TakeDamage(Damage);
+        Player.Instance.TakeDamage(Damage);
     }
 
     protected override void Death()

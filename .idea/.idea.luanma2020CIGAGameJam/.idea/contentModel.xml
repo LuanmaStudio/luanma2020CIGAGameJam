@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\phoenix\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\phoenix\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_luanma2020CIGAGameJam.-462886746.00" t="ExcludeRecursive" />
-    <e p="E:\unityProjects\luanma2020CIGAGameJam" t="IncludeRecursive">
+    <e p="C:\Users\Administrator\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Administrator\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_luanma2020CIGAGameJam.-592217335.00" t="ExcludeRecursive" />
+    <e p="E:\unityPorject\luanma2020CIGAGameJam" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
@@ -44,6 +44,46 @@
         </e>
         <e p="Enemy.cs" t="Include" />
         <e p="EnemyManager.cs" t="Include" />
+        <e p="fmod_project" t="Include">
+          <e p="gamejam2020" t="Include">
+            <e p="Metadata" t="Include">
+              <e p="Asset" t="Include">
+                <e p="{88e515fa-9764-45ab-a32e-8e0220af7073}.xml" t="Include" />
+              </e>
+              <e p="Bank" t="Include">
+                <e p="{84715f46-430e-4ed1-a981-198c06fd2e16}.xml" t="Include" />
+              </e>
+              <e p="BankFolder" t="Include">
+                <e p="{67f474de-b8a9-4de4-99f3-1d4d2ace9a3d}.xml" t="Include" />
+              </e>
+              <e p="EffectPresetFolder" t="Include">
+                <e p="{8da1a0ed-e4fa-4bcc-99d6-6e15ed047b11}.xml" t="Include" />
+              </e>
+              <e p="EncodingSetting" t="Include">
+                <e p="{fd1091be-43fd-40c1-8e60-10000b428330}.xml" t="Include" />
+              </e>
+              <e p="EventFolder" t="Include">
+                <e p="{21993cc3-aa9c-4e17-900c-d51282478912}.xml" t="Include" />
+              </e>
+              <e p="Master.xml" t="Include" />
+              <e p="Mixer.xml" t="Include" />
+              <e p="ParameterPresetFolder" t="Include">
+                <e p="{373e7b78-e662-4d16-9e3f-661c1ee169c6}.xml" t="Include" />
+              </e>
+              <e p="Platform" t="Include">
+                <e p="{750efe5b-e32a-4fdd-ae52-8f4be82b01cd}.xml" t="Include" />
+              </e>
+              <e p="Return" t="Include">
+                <e p="{bbf5c72d-87e2-42b0-bb1c-32a7229caf94}.xml" t="Include" />
+              </e>
+              <e p="SnapshotGroup" t="Include">
+                <e p="{45aabdbc-e5dc-42de-9039-ed7f75f99fdd}.xml" t="Include" />
+              </e>
+              <e p="Tags.xml" t="Include" />
+              <e p="Workspace.xml" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Player.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="FMOD" t="Include">
@@ -118,7 +158,9 @@
           <e p="EnemiesData.cs" t="Include" />
           <e p="HealthBase.cs" t="Include" />
           <e p="IAttack.cs" t="Include" />
+          <e p="IWeapon.cs" t="Include" />
         </e>
+        <e p="Sword.cs" t="Include" />
       </e>
       <e p="luanma2020CIGAGameJam.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />

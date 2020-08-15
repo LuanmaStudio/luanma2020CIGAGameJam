@@ -8,18 +8,12 @@ using UnityEngine;
 /// <summary>
 /// 玩家
 /// </summary>
-public class Player : HealthBase,IAttack
+public class Player : HealthBase
 {
-    public int Damage { get=>damage; set=>damage = value; }
     public static Player Instance { get; set; }
-
-    public float minDistance = 1;
-    public float AttackSpeed = 0.5f;
     
-
-    [SerializeField]private int damage;
-    private Side side = Side.Right;
-    private bool canAttack = true;
+    public Side side = Side.Right;
+    private IAttack weapon;
     protected Dictionary<string, List<Enemy>> EnemyDir;
 
     private void Awake()
@@ -30,7 +24,7 @@ public class Player : HealthBase,IAttack
     void Start()
     {
         helth = maxHelth;
-        EnemyDir = EnemyManager.Instance.EnemyDictionary;
+        weapon = GetComponentInChildren<IAttack>();
     }
 
     // Update is called once per frame
@@ -47,15 +41,7 @@ public class Player : HealthBase,IAttack
 
         if (Input.GetKeyDown(KeyCode.X))
         {
-            if (EnemyDir[side.ToString()].Count != 0)
-            {
-                var enemy = EnemyDir[side.ToString()][0];
-                if (Vector2.Distance(enemy.transform.position, transform.position) < minDistance)
-                {
-                    Attack(enemy);
-                }
-            }
-
+            weapon.Attack();
         }
         else if (Input.GetKeyDown(KeyCode.Z))
         {
@@ -80,20 +66,5 @@ public class Player : HealthBase,IAttack
     }
 
 
-    public void Attack(HealthBase target)
-    {
-        if (canAttack)
-        {
-            target.TakeDamage(Damage);
-            print("Attack");
-            StartCoroutine(AttackCool(AttackSpeed));
-        }
-    }
 
-    IEnumerator AttackCool(float time)
-    {
-        canAttack = false;
-        yield return new WaitForSeconds(time);
-        canAttack = true;
-    }
 }
