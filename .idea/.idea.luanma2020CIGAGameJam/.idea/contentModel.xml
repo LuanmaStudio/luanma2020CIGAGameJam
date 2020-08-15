@@ -88,11 +88,13 @@
                 <e p="{fd1091be-43fd-40c1-8e60-10000b428330}.xml" t="Include" />
               </e>
               <e p="Event" t="Include">
+                <e p="{67e8d392-d2e9-4f0e-9f70-60271408e19f}.xml" t="Include" />
                 <e p="{7c5ad6f4-deaa-4398-8015-7ba50521d57e}.xml" t="Include" />
                 <e p="{ff686b6e-4947-4743-985f-91ed0ec480cc}.xml" t="Include" />
               </e>
               <e p="EventFolder" t="Include">
                 <e p="{21993cc3-aa9c-4e17-900c-d51282478912}.xml" t="Include" />
+                <e p="{2ac3a194-102b-40ec-92d1-fad7693f977a}.xml" t="Include" />
                 <e p="{5000eb1d-3694-4aa2-ba49-b4e28986c815}.xml" t="Include" />
                 <e p="{93d7f3c3-1831-4d65-a6b9-4616deb2afa6}.xml" t="Include" />
               </e>
@@ -127,6 +129,7 @@
         <e p="Item_Scissors.cs" t="Include" />
         <e p="Item_Shit.cs" t="Include" />
         <e p="Item_TNT.cs" t="Include" />
+        <e p="LevelManager.cs" t="Include" />
         <e p="LongAttackEnermy.cs" t="Include" />
         <e p="Phone.cs" t="Include" />
         <e p="Player.cs" t="Include" />

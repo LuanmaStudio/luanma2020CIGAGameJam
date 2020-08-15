@@ -42,5 +42,12 @@ namespace Script
         public float Time;
         public EnemyType Type;
         public Side Side;
+
+        public EnemyData(EnemyType type,Side side,float time)
+        {
+            this.Type = type;
+            this.Side = side;
+            this.Time = time;
+        }
     }
 }

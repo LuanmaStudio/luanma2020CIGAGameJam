@@ -17,6 +17,7 @@ public class WP_LongStick : MonoBehaviour,IWeapon
     {
         EnemyDir = EnemyManager.Instance.EnemyDictionary;
         player = Player.Instance;
+        Player.Instance.weapon = this;
 
     }
 
