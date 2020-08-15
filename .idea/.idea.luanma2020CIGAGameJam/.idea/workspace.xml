@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4094b429-d491-4529-bfc0-f6f3ce1755ce" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.luanma2020CIGAGameJam/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.luanma2020CIGAGameJam/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.luanma2020CIGAGameJam/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.luanma2020CIGAGameJam/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.luanma2020CIGAGameJam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.luanma2020CIGAGameJam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.luanma2020CIGAGameJam/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.luanma2020CIGAGameJam/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1597515612249</updated>
       <workItem from="1597515651096" duration="43000" />
-      <workItem from="1597515716173" duration="162000" />
+      <workItem from="1597515716173" duration="987000" />
     </task>
     <servers />
   </component>
