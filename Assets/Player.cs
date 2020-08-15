@@ -22,6 +22,7 @@ public class Player : HealthBase
 
     public Dictionary<string, object> Items = new Dictionary<string, object>();
 
+    private Transform judgeArea;
     private void Awake()
     {
         Instance = this;
@@ -31,12 +32,14 @@ public class Player : HealthBase
     {
         helth = maxHelth;
         animator = GetComponent<Animator>();
+        judgeArea = transform.Find("Point");
     }
 
     // Update is called once per frame
     protected override void Update()
     {
         base.Update();
+        judgeArea.localPosition = new Vector3(weapon.Range - 1,0);
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             if(side == Side.Right) True();
@@ -50,7 +53,8 @@ public class Player : HealthBase
         {
             if (Items.ContainsKey(typeof(Item_Scissors).ToString()))
             {
-                weapon.Range *= (float)Items[typeof(Item_Scissors).ToString()];
+                weapon.Range = weapon.Range*((float)Items[typeof(Item_Scissors).ToString()]+1);
+                Items.Remove(typeof(Item_Scissors).ToString());
             }
 
             if (Items.ContainsKey(typeof(Item_MutiStick).ToString()))

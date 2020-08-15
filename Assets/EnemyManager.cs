@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using DG.Tweening;
 using Script;
 using UnityEngine;
 
@@ -47,7 +48,9 @@ public class EnemyManager : MonoBehaviour
             }
             else
             {
-                go = Instantiate(Enemies[0], LeftPos.position,Quaternion.identity).GetComponent<Enemy>();
+                var temp = Instantiate(Enemies[0], LeftPos.position,Quaternion.identity);
+                go = temp.GetComponent<Enemy>();
+                temp.transform.localScale = new Vector3(-temp.transform.localScale.x,temp.transform.localScale.y);
             }
             go.MoveToPlayer(data.Side);
         }
@@ -61,7 +64,10 @@ public class EnemyManager : MonoBehaviour
             }
             else
             {
-                longAttackEnermy = Instantiate(Enemies[1], LeftPos.position,Quaternion.identity).GetComponent<LongAttackEnermy>();
+                var temp = Instantiate(Enemies[1], LeftPos.position, Quaternion.identity);
+                temp.transform.localScale = new Vector3(-temp.transform.localScale.x,temp.transform.localScale.y);
+                longAttackEnermy =   temp.GetComponent<LongAttackEnermy>();
+                
             }
             longAttackEnermy.Attack();
             go = longAttackEnermy;

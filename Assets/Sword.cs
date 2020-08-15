@@ -55,7 +55,7 @@ public class Sword : MonoBehaviour,IAttack
             if (EnemyDir[player.side.ToString()].Count != 0)
             {
                 var enemy = EnemyDir[player.side.ToString()][0];
-                if (Vector2.Distance(enemy.transform.position, transform.position) < Range)
+                if (Mathf.Abs(enemy.transform.position.x -transform.position.x) < Range)
                 {
                     enemy.TakeDamage(Damage);
                 }
