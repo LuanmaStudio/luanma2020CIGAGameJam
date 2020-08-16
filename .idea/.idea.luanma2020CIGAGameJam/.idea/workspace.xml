@@ -59,15 +59,15 @@
         <option value="$PROJECT_DIR$/Assets/WP_LongStick.cs" />
         <option value="$PROJECT_DIR$/Assets/Restart.cs" />
         <option value="$PROJECT_DIR$/Assets/MusicOnCamera.cs" />
-        <option value="$PROJECT_DIR$/Assets/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/StartGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Skip.cs" />
         <option value="$PROJECT_DIR$/Assets/Phone.cs" />
-        <option value="$PROJECT_DIR$/Assets/Score.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/EnemyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Score.cs" />
       </list>
     </option>
   </component>

@@ -28,7 +28,7 @@ public class LevelManager : MonoBehaviour
     {
         
         musicOnCamera = Camera.main.GetComponent<MusicOnCamera>();
-
+        musicOnCamera.MusicInstance.setParameterByName("game_state", 0);
 
     }
 
