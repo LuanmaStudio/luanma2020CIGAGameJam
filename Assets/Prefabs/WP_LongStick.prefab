@@ -45,4 +45,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   range: 2
-  attackDuration: 0.5
+  attackDuration: 0.1
+  DamageEnvet: event:/player_hit/player_attack_effect

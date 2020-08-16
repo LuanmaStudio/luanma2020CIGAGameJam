@@ -59,6 +59,7 @@ public class Enemy : HealthBase,IAttack
     {
         yield return new WaitForSeconds(waitAttackTime);
         Player.Instance.TakeDamage(Damage);
+        Death();
     }
 
     protected override void Death()
