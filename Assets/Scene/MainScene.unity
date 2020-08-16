@@ -713,8 +713,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentLevle: 0
-  EnermySpawnRate: 030000000500000007000000
-  LongRangeEnermyRate: 010000000200000002000000
+  EnermySpawnRate: 03000000050000000700000007000000
+  LongRangeEnermyRate: 01000000020000000200000002000000
   buyList:
   - list:
     - {fileID: 4275429697631361934, guid: 3fbec796f3fb17e4da39ef20e438de64, type: 3}

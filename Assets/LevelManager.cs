@@ -28,7 +28,7 @@ public class LevelManager : MonoBehaviour
     {
         while (true)
         {
-            if (Random.Range(1, 10) <=EnermySpawnRate[currentLevle])
+            if (Random.Range(1, 10f) <=EnermySpawnRate[currentLevle])
             {
                 Side side;
                 if (Random.Range(1, 10) >= 5)
@@ -41,7 +41,7 @@ public class LevelManager : MonoBehaviour
                 }
 
                 EnemyType type;
-                if (Random.Range(1, 10) <= LongRangeEnermyRate[currentLevle])
+                if (Random.Range(1, 10f) <= LongRangeEnermyRate[currentLevle])
                 {
                     type = EnemyType.Remote;
                 }
