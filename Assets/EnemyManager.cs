@@ -76,6 +76,7 @@ public class EnemyManager : MonoBehaviour
         }
         EnemyDictionary[data.Side.ToString()].Add(go);
         go.onDead.AddListener(()=>EnemyDictionary[data.Side.ToString()].Remove(go));
+        go.onDead.AddListener(()=>Score.Instance.score++);
     }
 
     // Update is called once per frame

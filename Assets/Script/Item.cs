@@ -17,6 +17,7 @@ namespace Script
         public virtual void UseItem()
         {
             Phone.Instance.onSelect.Invoke();
+            Score.Instance.score -= 30;
         }
     }
 }

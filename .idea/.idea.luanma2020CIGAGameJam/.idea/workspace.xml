@@ -19,6 +19,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Item_TNT.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/EnemyManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Restart.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Score.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Item_LongStick.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Item_Pan.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Skip.cs" root0="FORCE_HIGHLIGHTING" />
@@ -55,9 +56,6 @@
         <option value="$PROJECT_DIR$/Assets/Item_LongStick.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/EnemiesData.cs" />
         <option value="$PROJECT_DIR$/Assets/Sword.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Item.cs" />
-        <option value="$PROJECT_DIR$/Assets/EnemyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/WP_LongStick.cs" />
         <option value="$PROJECT_DIR$/Assets/Restart.cs" />
         <option value="$PROJECT_DIR$/Assets/MusicOnCamera.cs" />
@@ -66,6 +64,10 @@
         <option value="$PROJECT_DIR$/Assets/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Skip.cs" />
         <option value="$PROJECT_DIR$/Assets/Phone.cs" />
+        <option value="$PROJECT_DIR$/Assets/Score.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/EnemyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Item.cs" />
       </list>
     </option>
   </component>
