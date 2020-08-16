@@ -135,6 +135,8 @@ GameObject:
   - component: {fileID: 6598522510393194353}
   - component: {fileID: 6598522510393194355}
   - component: {fileID: 6598522510393194354}
+  - component: {fileID: 9142209346740167443}
+  - component: {fileID: 1716771915015287396}
   m_Layer: 0
   m_Name: player_sprite
   m_TagString: Untagged
@@ -239,6 +241,33 @@ MonoBehaviour:
     m_Extent: {x: 4.428742, y: 8.893019, z: 0.014354276}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
+--- !u!114 &9142209346740167443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6598522510393194352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SpriteLibraryAsset: {fileID: 0}
+--- !u!114 &1716771915015287396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6598522510393194352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CategoryHash: 0
+  m_labelHash: 0
 --- !u!1 &6598522510489898119
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,6 +536,7 @@ MonoBehaviour:
   helth: 0
   missRate: 0
   side: 0
+  FX: {fileID: 0}
   animator: {fileID: 6598522511156975929}
 --- !u!70 &6598522511156975935
 CapsuleCollider2D:
