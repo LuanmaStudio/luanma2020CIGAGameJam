@@ -9,26 +9,30 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Item_MutiStick.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Item_LongStick.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/EnemiesData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Item_Pan.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/StartGame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LongAttackEnermy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Item_Amulet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sword.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PlayerHpSlider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/WP_LongStick.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Item_TNT.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/EnemyManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Restart.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Item_LongStick.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Item_Pan.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Skip.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Item_Amulet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/IWeapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Item_Scissors.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/IAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Item.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/PlayerHpSlider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HealthBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Phone.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/WP_LongStick.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Item_TNT.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/EnemyManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Item_Shit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MusicOnCamera.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -40,7 +44,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/IWeapon.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayerHpSlider.cs" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Assets/Script/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/LongAttackEnermy.cs" />
         <option value="$PROJECT_DIR$/Assets/Item_Pan.cs" />
         <option value="$PROJECT_DIR$/Assets/Item_Shit.cs" />
@@ -49,15 +52,20 @@
         <option value="$PROJECT_DIR$/Assets/Item_Scissors.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/HealthBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Item_TNT.cs" />
-        <option value="$PROJECT_DIR$/Assets/Phone.cs" />
         <option value="$PROJECT_DIR$/Assets/Item_LongStick.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/EnemiesData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Sword.cs" />
-        <option value="$PROJECT_DIR$/Assets/WP_LongStick.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/EnemyManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Phone.cs" />
+        <option value="$PROJECT_DIR$/Assets/WP_LongStick.cs" />
+        <option value="$PROJECT_DIR$/Assets/Restart.cs" />
+        <option value="$PROJECT_DIR$/Assets/MusicOnCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/StartGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Skip.cs" />
       </list>
     </option>
   </component>
@@ -71,11 +79,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="20664">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="20664" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -91,6 +99,70 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="2151" height="436" key="GridCell.Tab.0.bottom" timestamp="1597550351020">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="436" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1597550351020" />
+    <state width="2151" height="436" key="GridCell.Tab.0.center" timestamp="1597550351020">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="436" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1597550351020" />
+    <state width="2151" height="436" key="GridCell.Tab.0.left" timestamp="1597550351020">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="436" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1597550351020" />
+    <state width="2151" height="436" key="GridCell.Tab.0.right" timestamp="1597550351020">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="436" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1597550351020" />
+    <state width="2151" height="436" key="GridCell.Tab.1.bottom" timestamp="1597550351020">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="436" key="GridCell.Tab.1.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1597550351020" />
+    <state width="2151" height="436" key="GridCell.Tab.1.center" timestamp="1597550351020">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="436" key="GridCell.Tab.1.center/0.0.2194.1194@0.0.2194.1194" timestamp="1597550351020" />
+    <state width="2151" height="436" key="GridCell.Tab.1.left" timestamp="1597550351020">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="436" key="GridCell.Tab.1.left/0.0.2194.1194@0.0.2194.1194" timestamp="1597550351020" />
+    <state width="2151" height="436" key="GridCell.Tab.1.right" timestamp="1597550351020">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="436" key="GridCell.Tab.1.right/0.0.2194.1194@0.0.2194.1194" timestamp="1597550351020" />
+    <state width="2151" height="436" key="GridCell.Tab.2.bottom" timestamp="1597550351020">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="436" key="GridCell.Tab.2.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1597550351020" />
+    <state width="2151" height="436" key="GridCell.Tab.2.center" timestamp="1597550351020">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="436" key="GridCell.Tab.2.center/0.0.2194.1194@0.0.2194.1194" timestamp="1597550351020" />
+    <state width="2151" height="436" key="GridCell.Tab.2.left" timestamp="1597550351020">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="436" key="GridCell.Tab.2.left/0.0.2194.1194@0.0.2194.1194" timestamp="1597550351020" />
+    <state width="2151" height="436" key="GridCell.Tab.2.right" timestamp="1597550351020">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="436" key="GridCell.Tab.2.right/0.0.2194.1194@0.0.2194.1194" timestamp="1597550351020" />
+    <state width="2151" height="436" key="GridCell.Tab.3.bottom" timestamp="1597550351020">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="436" key="GridCell.Tab.3.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1597550351020" />
+    <state width="2151" height="436" key="GridCell.Tab.3.center" timestamp="1597550351020">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="436" key="GridCell.Tab.3.center/0.0.2194.1194@0.0.2194.1194" timestamp="1597550351020" />
+    <state width="2151" height="436" key="GridCell.Tab.3.left" timestamp="1597550351020">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="436" key="GridCell.Tab.3.left/0.0.2194.1194@0.0.2194.1194" timestamp="1597550351020" />
+    <state width="2151" height="436" key="GridCell.Tab.3.right" timestamp="1597550351020">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="436" key="GridCell.Tab.3.right/0.0.2194.1194@0.0.2194.1194" timestamp="1597550351020" />
     <state x="916" y="281" key="RiderGenerateDialog" timestamp="1597490262292">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>

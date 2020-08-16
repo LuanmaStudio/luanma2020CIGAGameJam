@@ -203,6 +203,7 @@
             </e>
           </e>
         </e>
+        <e p="Restart.cs" t="Include" />
         <e p="Script" t="Include">
           <e p="EnemiesData.cs" t="Include" />
           <e p="HealthBase.cs" t="Include" />
@@ -210,6 +211,8 @@
           <e p="Item.cs" t="Include" />
           <e p="IWeapon.cs" t="Include" />
         </e>
+        <e p="Skip.cs" t="Include" />
+        <e p="StartGame.cs" t="Include" />
         <e p="Sword.cs" t="Include" />
         <e p="WP_LongStick.cs" t="Include" />
       </e>

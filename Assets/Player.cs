@@ -23,6 +23,11 @@ public class Player : HealthBase
     public Dictionary<string, object> Items = new Dictionary<string, object>();
 
     private Transform judgeArea;
+    private bool immunity = false;
+    private SpriteRenderer renderer;
+    [FMODUnity.EventRef]public string DamageEnvet;
+
+
     private void Awake()
     {
         Instance = this;
@@ -33,6 +38,7 @@ public class Player : HealthBase
         helth = maxHelth;
         animator = GetComponent<Animator>();
         judgeArea = transform.Find("Point");
+        renderer = GetComponentInChildren<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -62,6 +68,9 @@ public class Player : HealthBase
                 isShelid = true;
             }
             weapon.Attack();
+            var DamageInst = FMODUnity.RuntimeManager.CreateInstance(DamageEnvet);
+            DamageInst.start();
+
         }
         else if (Input.GetKeyDown(KeyCode.Z))
         {
@@ -104,12 +113,32 @@ public class Player : HealthBase
 
     public override void TakeDamage(int damage)
     {
+        if (immunity)
+        {
+            return;
+        }
+        
         base.TakeDamage(damage);
+        var twnner = renderer.DOColor(Color.red, 0.1f);
+        twnner.onComplete +=()=> renderer.DOColor(Color.white, 0.1f);
+        StartCoroutine(Immunite());
+    }
+
+    IEnumerator Immunite()
+    {
+        immunity = true;
+        yield return new WaitForSeconds(0.5f);
+        immunity = false;
     }
 
     protected override void Death()
     {
         base.Death();
+        if (helth <= 0)
+        {
+            Restart.Instance.Show();
+        }
+
     }
 
     /// <summary>
@@ -127,14 +156,5 @@ public class Player : HealthBase
         }
         transform.localScale = new Vector3(-transform.localScale.x,transform.localScale.y,1);
     }
-
-    private void OnGUI()
-    {
-        if (GUI.Button(new Rect(100, 100, 100, 30), "Button"))
-        {
-            int a = 0;
-            Camera.main.GetComponent<MusicOnCamera>().MusicInstance.getTimelinePosition(out a);
-            print(a);
-        }
-    }
+    
 }

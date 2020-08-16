@@ -12,7 +12,6 @@ public class WP_LongStick : MonoBehaviour,IWeapon
     [SerializeField] private float range;
     [SerializeField] private float attackDuration;
     
-    [FMODUnity.EventRef]public string DamageEnvet;
     private static readonly int Attack1 = Animator.StringToHash("Attack");
 
     void Start()
@@ -36,8 +35,6 @@ public class WP_LongStick : MonoBehaviour,IWeapon
     
     public void Attack()
     {
-        var DamageInst = FMODUnity.RuntimeManager.CreateInstance(DamageEnvet);
-        DamageInst.start();
         
         if (canAttack)
         {

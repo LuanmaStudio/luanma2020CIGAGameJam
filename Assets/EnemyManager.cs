@@ -60,12 +60,13 @@ public class EnemyManager : MonoBehaviour
             LongAttackEnermy longAttackEnermy;
             if (data.Side == Side.Right)
             {
-                longAttackEnermy =Instantiate(Enemies[1], RightPos.position,Quaternion.identity).GetComponent<LongAttackEnermy>();
+                var temp = Instantiate(Enemies[1], RightPos.position+Vector3.left, Quaternion.identity);
+                longAttackEnermy =   temp.GetComponent<LongAttackEnermy>();
+                temp.transform.localScale = new Vector3(-temp.transform.localScale.x,temp.transform.localScale.y);
             }
             else
             {
-                var temp = Instantiate(Enemies[1], LeftPos.position, Quaternion.identity);
-                temp.transform.localScale = new Vector3(-temp.transform.localScale.x,temp.transform.localScale.y);
+                var temp = Instantiate(Enemies[1], LeftPos.position+Vector3.right, Quaternion.identity);
                 longAttackEnermy =   temp.GetComponent<LongAttackEnermy>();
                 
             }
