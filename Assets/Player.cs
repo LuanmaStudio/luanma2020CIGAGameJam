@@ -128,6 +128,13 @@ public class Player : HealthBase
         transform.localScale = new Vector3(-transform.localScale.x,transform.localScale.y,1);
     }
 
-
-
+    private void OnGUI()
+    {
+        if (GUI.Button(new Rect(100, 100, 100, 30), "Button"))
+        {
+            int a = 0;
+            Camera.main.GetComponent<MusicOnCamera>().MusicInstance.getTimelinePosition(out a);
+            print(a);
+        }
+    }
 }
