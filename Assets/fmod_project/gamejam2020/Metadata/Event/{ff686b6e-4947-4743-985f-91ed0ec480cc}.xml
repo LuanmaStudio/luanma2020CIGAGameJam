@@ -547,7 +547,7 @@
 			<value>161.86209988782613</value>
 		</property>
 		<property name="length">
-			<value>44.999772598499789</value>
+			<value>44.650295861179018</value>
 		</property>
 		<property name="name">
 			<value>phase_2</value>
@@ -564,10 +564,10 @@
 	</object>
 	<object class="LoopRegion" id="{f3680ccc-a230-40c9-b12e-0d254b15b86b}">
 		<property name="position">
-			<value>206.86187248632592</value>
+			<value>206.51239574900515</value>
 		</property>
 		<property name="length">
-			<value>21.975018326210773</value>
+			<value>22.324495063531543</value>
 		</property>
 		<property name="name">
 			<value>buy_2</value>
@@ -627,10 +627,10 @@
 	</object>
 	<object class="TransitionRegion" id="{296bd623-70b1-4a74-b2b9-8f445db23770}">
 		<property name="position">
-			<value>206.86187248632592</value>
+			<value>206.51239574900515</value>
 		</property>
 		<property name="length">
-			<value>21.975018326210773</value>
+			<value>22.324495063531543</value>
 		</property>
 		<property name="quantizationInterval">
 			<value>1</value>
