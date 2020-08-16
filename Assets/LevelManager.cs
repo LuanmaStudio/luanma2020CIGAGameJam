@@ -8,6 +8,9 @@ using Random = UnityEngine.Random;
 public class LevelManager : MonoBehaviour
 {
     public int currentLevle;
+    public int[] EnermySpawnRate;
+    public int[] LongRangeEnermyRate;
+    
     
     [SerializeField]public List<ItemData> buyList;
     void Start()
@@ -25,10 +28,10 @@ public class LevelManager : MonoBehaviour
     {
         while (true)
         {
-            if (Random.Range(1, 10) >5)
+            if (Random.Range(1, 10) <=EnermySpawnRate[currentLevle])
             {
                 Side side;
-                if (Random.Range(1, 10) > 5)
+                if (Random.Range(1, 10) >= 5)
                 {
                     side = Side.Left;
                 }
@@ -38,7 +41,7 @@ public class LevelManager : MonoBehaviour
                 }
 
                 EnemyType type;
-                if (Random.Range(1, 10) > 8)
+                if (Random.Range(1, 10) <= LongRangeEnermyRate[currentLevle])
                 {
                     type = EnemyType.Remote;
                 }

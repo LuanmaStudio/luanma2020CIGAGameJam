@@ -132,7 +132,9 @@ public class Player : HealthBase
     {
         if (GUI.Button(new Rect(100, 100, 100, 30), "Button"))
         {
-            
+            int a = 0;
+            Camera.main.GetComponent<MusicOnCamera>().MusicInstance.getTimelinePosition(out a);
+            print(a);
         }
     }
 }
