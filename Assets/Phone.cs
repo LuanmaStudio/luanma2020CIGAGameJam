@@ -39,6 +39,6 @@ public class Phone : MonoBehaviour
 
     public void HidePhone()
     {
-        tweener = transform.DOMoveY(-1000, 1);
+        tweener = transform.DOMoveY(-2000, 1);
     }
 }
