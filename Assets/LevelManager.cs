@@ -8,8 +8,8 @@ using Random = UnityEngine.Random;
 public class LevelManager : MonoBehaviour
 {
     public int currentLevle;
-    public int[] EnermySpawnRate;
-    public int[] LongRangeEnermyRate;
+    public float[] EnermySpawnRate;
+    public float[] LongRangeEnermyRate;
     
     
     [SerializeField]public List<ItemData> buyList;
