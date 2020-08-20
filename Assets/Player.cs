@@ -75,7 +75,6 @@ public class Player : HealthBase
         else if (Input.GetKeyDown(KeyCode.Z))
         {
             isShelid = true;
-            animator.SetTrigger("Defence");
         }
         else if (Input.GetKeyUp(KeyCode.X))
         {
@@ -85,6 +84,7 @@ public class Player : HealthBase
         {
             isShelid = false;
         }
+        animator.SetBool("Defence",isShelid);
     }
 
     public void ReciveLaser()

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Script;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class LevelManager : MonoBehaviour
@@ -18,6 +19,7 @@ public class LevelManager : MonoBehaviour
     private int currentTime;
     private MusicOnCamera musicOnCamera;
     public bool spawnEnermy = true;
+    public Text wava;
 
     private void Awake()
     {
@@ -42,6 +44,7 @@ public class LevelManager : MonoBehaviour
     void Update()
     {
         musicOnCamera.MusicInstance.getTimelinePosition(out currentTime);
+        wava.text = $"当前第{currentLevle}波";
 
         if (currentTime > 45000)
         {

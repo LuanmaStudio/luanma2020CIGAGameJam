@@ -43,7 +43,7 @@ public class LongAttackEnermy : Enemy,IAttack
             pos = Player.Instance.transform.position - new Vector3(1, 0);
 
         }
-        GetComponentInChildren<LineRenderer>().SetPosition(1,Player.Instance.transform.position + pos);
+        GetComponentInChildren<LineRenderer>().SetPosition(1,new Vector3(Player.Instance.transform.position.x,transform.position.y));
         var twenner = DOTween.To(() => laser.widthMultiplier, (s) => laser.widthMultiplier = s, 1f, AttackDuration);
         twenner.SetEase(Curve);
         twenner.onComplete += ()=>
